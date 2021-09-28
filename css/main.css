@@ -1,0 +1,429 @@
+/* General Styles */
+
+html {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  background-color: #dfd0c5;
+  background: linear-gradient(to right bottom, #fdfcfb,#dfd0c5);
+  color: #315F8D;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: circle;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Yesteryear', cursive;
+  font-size: 3.25em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Yesteryear', cursive;
+  font-size: 4em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 700;
+  line-height: 1.375em;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+p span {
+  font-weight: 700;
+}
+
+img {
+  width: 80%;
+}
+
+figure {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  min-width: 350px;
+}
+
+.hide {
+  display: none;
+}
+
+/* ---------- Base Header - Footer Styles ----------  */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* Header Styles */
+header {
+  padding: 15px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 55%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header nav ul li {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Footer Styles */
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p i {
+  color:#315F8D;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* ------------------------ Mobile Styles - Homepage ------------------------ */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+main section {
+  margin-bottom: 15px;
+  border-radius: 15px;
+  min-height: 250px;
+}
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero-area img {
+  border-radius: 15px;
+  width: 100%;
+  
+}
+
+/* Text Block */
+
+.text-block {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Dinner Area */
+
+.dinner-past,
+.dinner-current,
+.dinner-next {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+ 
+}
+
+.dinner-past {
+  background: url(../img/cc-vietnamese-01.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.dinner-current {
+  background: url(../img/cc-nopalito-01.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.dinner-next {
+  background: url(../img/cc-chinese-01.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.dinner-past:hover,
+.dinner-current:hover,
+.dinner-next:hover {
+  background:#315F8D;
+}
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* Tablet styles */
+
+  .content-wrapper {
+    max-width: 640px;
+    justify-content: space-between;
+  }
+
+  /* Header */
+  header {
+    justify-content: space-around;
+    padding: 30px 0 20px 0;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  header nav ul li {
+    font-size: 1.125em;
+  }
+
+  main section {
+    min-height: 300px;
+  }
+  
+  /* Hero Area */
+
+.hero-area {
+  width: 48%;
+}
+
+/* Text Block */
+
+.text-block {
+  justify-content: space-between;
+  width: 48%;
+}
+
+/* Dinner Area */
+
+.dinner-past,
+.dinner-current,
+.dinner-next {
+  width: 48%;
+}
+
+  /* Footer */
+  
+  footer .content-wrapper {
+    margin: 100px 0;
+    width: 75%;
+    }
+
+  footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.286;
+  }
+   
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+ 
+  .faq .content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 0 50px;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+
+  .faq p {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
+  header {
+    padding: 15px 0;
+  }
+  
+  header figure {
+    width: 24%;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
+  }
+
+ 
+
+}
