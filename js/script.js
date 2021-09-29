@@ -2,6 +2,9 @@ const dinnerPast = document.querySelector(".dinner-past");
 const dinnerCurrent = document.querySelector(".dinner-current");
 const dinnerNext = document.querySelector("dinner-next");
 
+
+//Dinner categories displayed on hover
+
 dinnerPast.addEventListener("mouseover", function () {
     dinnerPast.innerHTML = '<h2>Past</h2>';
 });
