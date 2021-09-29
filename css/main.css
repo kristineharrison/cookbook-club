@@ -7,7 +7,7 @@ html {
 
 body {
   background-color: #dfd0c5;
-  background: linear-gradient(to right bottom, #fdfcfb,#dfd0c5);
+  background: linear-gradient(to right bottom, #fdfcfb,#D9CCC2);
   color: #315F8D;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1em;
@@ -69,7 +69,7 @@ figure {
 
 .content-wrapper {
   width: 80%;
-  margin: 25px 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ footer {
 
 /* Header Styles */
 header {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 header nav {
@@ -113,6 +113,14 @@ header nav ul {
 header nav ul li {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+header nav ul li a {
+  color:#315F8D;
+}
+
+header nav ul li a:hover {
+  color: #4b220c;
 }
 
 /* Footer Styles */
@@ -307,6 +315,8 @@ main section {
     font-size: 1.125em;
   }
 
+  /* Main Area */
+
   main section {
     min-height: 300px;
   }
@@ -394,36 +404,55 @@ main section {
   header {
     padding: 15px 0;
   }
-  
-  header figure {
-    width: 24%;
-  }
 
   .content-wrapper {
     max-width: 960px;
   }
 
+  h1 {
+    font-size: 4.75em;
+  }
+  
   h2 {
+    font-size: 5em;
+  }
+
+  h3 {
     font-size: 2.25em;
   }
 
-  h3,
-  h4 {
-    font-size: 1.875em;
+  p {
+    font-size: 1.35em;
+    line-height: 1.4;
+  }
+  
+  ol li {
+    font-size: 1.35em; 
   }
 
-  p {
-    font-size: 1.125em;
-    line-height: 1.333;
+  header nav ul li {
+    font-size: 1.5em;
   }
 
   /* Hero Area */
 
-  .hero-area h1 {
-    font-size: 3.75em;
-    width: 80%;
+  .hero-area {
+    width: 32%;
+  }
+  
+  /* Text Block */
+  
+  .text-block {
+    justify-content: space-between;
+    width: 66%;
   }
 
- 
+  /* Dinner Area */
+
+  .dinner-past,
+  .dinner-current,
+  .dinner-next {
+    width: 32%;
+  }
 
 }
