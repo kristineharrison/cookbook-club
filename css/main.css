@@ -321,10 +321,14 @@ main section {
     min-height: 300px;
   }
   
-  /* Hero Area */
+  /* Image Block */
 
 .image-block {
   width: 48%;
+}
+
+.last-img {
+  display: none;
 }
 
 /* Text Block */
