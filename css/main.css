@@ -3,11 +3,12 @@
 html {
   font-size: 16px;
   line-height: 1.4;
+  height: 100%;
 }
 
 body {
   background-color: #dfd0c5;
-  background: linear-gradient(to right bottom, #fdfcfb,#D9CCC2);
+  background: linear-gradient(to right bottom, #fdfcfb,#9b816d);
   color: #315F8D;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1em;
@@ -41,11 +42,13 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  background: rgba(255, 255, 255, .75);
   font-family: 'Yesteryear', cursive;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 400;
-  margin: 0;
+  margin: 20px;
+  padding: 3% 5%;
+  border-radius: 10px;
 }
 
 h3 {
@@ -73,13 +76,13 @@ figure {
 }
 
 .content-wrapper {
-  width: 80%;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
   min-width: 350px;
+  width: 80%;
 }
 
 .hide {
@@ -177,40 +180,38 @@ main section {
 
 .image-block img {
   border-radius: 15px;
-  width: 100%;
 }
 
 .first-img {
   background: url(../img/cc-desserts-01.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .last-img {
   background: url(../img/cc-vietnamese-01.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /* Dinner Area */
 
-.dinner-past {
+.second-img {
   background: url(../img/cc-vietnamese-01.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.dinner-current {
+.third-img {
   background: url(../img/cc-nopalito-01.jpg) 0 0 no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.dinner-next {
+.fourth-img {
   background: url(../img/cc-chinese-01.jpg) 0 0 no-repeat;
   background-size: cover;
-}
-
-.dinner-past:hover,
-.dinner-current:hover,
-.dinner-next:hover {
-  background:#315F8D;
+  background-position: center;
 }
 
 /* Text Block */
@@ -405,7 +406,7 @@ footer p span {
   }
   
   h2 {
-    font-size: 5em;
+    font-size: 2.5em;
     text-align: center;
   }
 
@@ -452,5 +453,4 @@ footer p span {
   footer .social-icons a:visited,
   footer .scoial-icons a:link {
   font-size: 1.75em;
-  margin: 0 10px;
 }

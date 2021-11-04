@@ -1,30 +1,30 @@
-const dinnerPast = document.querySelector(".dinner-past");
-const dinnerCurrent = document.querySelector(".dinner-current");
-const dinnerNext = document.querySelector(".dinner-next");
+const secondImage = document.querySelector(".second-img");
+const thirdImage = document.querySelector(".third-img");
+const fourthImage = document.querySelector(".fourth-img");
 
 
-//Dinner categories displayed on hover
+//Book names displayed on hover
 
-dinnerPast.addEventListener("mouseover", function () {
-    dinnerPast.innerHTML = '<h2>Past</h2>';
+secondImage.addEventListener("mouseenter", function () {
+    secondImage.innerHTML = '<h2>Vietnamese Food Any Day</h2>';
 });
 
-dinnerPast.addEventListener("mouseout", function () {
-    dinnerPast.innerHTML = "";
+secondImage.addEventListener("mouseleave", function () {
+    secondImage.innerHTML = "";
 });
 
-dinnerCurrent.addEventListener("mouseover", function () {
-    dinnerCurrent.innerHTML = '<h2>Current</h2>';
+thirdImage.addEventListener("mouseenter", function () {
+    thirdImage.innerHTML = '<h2>Nopalito: A Mexican Kitchen</h2>';
 });
 
-dinnerCurrent.addEventListener("mouseout", function () {
-    dinnerCurrent.innerHTML = "";
+thirdImage.addEventListener("mouseleave", function () {
+    thirdImage.innerHTML = "";
 });
 
-dinnerNext.addEventListener("mouseover", function () {
-    dinnerNext.innerHTML = '<h2>Next</h2>';
+fourthImage.addEventListener("mouseenter", function () {
+    fourthImage.innerHTML = '<h2>Fortune Cookies</h2>';
 });
 
-dinnerNext.addEventListener("mouseout", function () {
-    dinnerNext.innerHTML = "";
+fourthImage.addEventListener("mouseleave", function () {
+    fourthImage.innerHTML = "";
 });
