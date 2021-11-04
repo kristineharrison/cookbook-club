@@ -6,8 +6,8 @@
     <title>Cookbook Club</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -17,7 +17,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d29d7c25a6.js" crossorigin="anonymous"></script>
 
-    <script src="js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
 
 </head>
 
@@ -27,22 +27,36 @@
             <h1>Cookbook Club</h1>
             <nav>
                 <ul>
-                    <li><a href="books/index.html" target="self">Books</a></li>
-                    <li><a href="faq/index.html" target="self">FAQ</a></li>
-                    <li><a href="resources/index.html" target="self">Resources</a></li>
+                    <li><a href="../index.html" target="_self">Home</a></li>
+                    <li><a href="../faq/index.html" target="_self">FAQ</a></li>
+                    <li><a href="../resources/index.html" target="_self">Resources</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-    
+        <article id="current-book">
+            <section class="book-cover">
+
+            </section>
+        </article>
+        <article id="past-books">
+            <section>
+
+            </section>
+        </article>
+        <article id="next-book">
+            <section>
+
+            </section>
+        </article>
     </main>
 
     <footer>
         <div class="content-wrapper">
             <div class="social-icons">
-                <p>
+                <p class="social-icons">
                     <a href="" alt="Amazon booklist" target="_blank">
                         <i class="fab fa-amazon"></i>
                     </a>
@@ -62,6 +76,9 @@
                         <i class="fab fa-spotify"></i>
                     </a>
                 </p>
+            </div>
+            <div>
+                <p><span>Copyright 2021 K Kochie</span></p>
             </div>
         </div>
     </footer>

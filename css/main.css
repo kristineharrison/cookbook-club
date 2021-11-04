@@ -127,17 +127,21 @@ header nav ul li a:hover {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
-footer .social-icons p i {
+footer .social-icons p,
+footer .social-icons a,
+footer .social-icons a:visited,
+footer .scoial-icons a:link {
   color:#315F8D;
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.5em;
   margin: 0 10px;
+}
+
+footer p span {
+  font-weight: 200;
 }
 
 /* ------------------------ Mobile Styles - Homepage ------------------------ */
@@ -345,15 +349,18 @@ footer .content-wrapper {
   flex-direction: row;
   }
 
-footer .footer-content {
-  display: flex;
+footer .social-icons {
   justify-content: flex-end;
   flex-flow: row wrap;
 }
 
+footer .social-icons {
+  margin: 0 5px;
+}
+
 footer p span {
-  font-size: .75em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 200;
 }
    
 
@@ -378,10 +385,11 @@ footer p span {
   
   h2 {
     font-size: 5em;
+    text-align: center;
   }
 
   h3 {
-    font-size: 2.25em;
+    font-size: 2.15em;
   }
 
   p {
