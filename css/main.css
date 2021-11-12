@@ -7,8 +7,7 @@ html {
 }
 
 body {
-  background-color: #dfd0c5;
-  background: linear-gradient(to right bottom, #fdfcfb,#9b816d);
+  background-color: #f0e9d7;
   color: #315F8D;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1em;
@@ -89,7 +88,7 @@ figure {
   display: none;
 }
 
-/* ---------- Base Header - Footer Styles ----------  */
+/* ---------- Header - Footer Styles ----------  */
 
 header,
 footer {
@@ -167,9 +166,10 @@ main section {
   min-height: 250px;
 }
 
-/* Image Block */
+/* Image Blocks */
 
-.image-block {
+.image-block,
+.book-cover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,6 +178,7 @@ main section {
   margin-bottom: 15px;
 }
 
+.book-cover img,
 .image-block img {
   border-radius: 15px;
 }
@@ -187,14 +188,6 @@ main section {
   background-size: cover;
   background-position: center;
 }
-
-.last-img {
-  background: url(../img/cc-vietnamese-01.jpg) 0 0 no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Dinner Area */
 
 .second-img {
   background: url(../img/cc-vietnamese-01.jpg) 0 0 no-repeat;
@@ -214,6 +207,12 @@ main section {
   background-position: center;
 }
 
+.last-img {
+  background: url(../img/cc-veggies.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* Text Block */
 
 .text-block {
@@ -224,6 +223,23 @@ main section {
   padding: 20px;
   box-sizing: border-box;
 }
+
+/* ==========================================================================
+   Dinners Page
+   ========================================================================== */
+
+.book-cover img {
+  width: 100%;
+}
+
+#current-book,
+#past-books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 /* ==========================================================================
    FAQ Page
@@ -345,51 +361,81 @@ main section {
   
   /* Image Block */
 
-.image-block {
-  width: 48%;
-}
-
-.last-img {
-  display: none;
-}
-
-/* Text Block */
-
-.text-block {
-  display: flex;
-  justify-content: center; 
-  width: 48%;
-}
-
-.text-block h3 {
-  text-align: center;
-}
-
-/* Footer */
-  
-footer .content-wrapper {
-  display: flex;
-  flex-direction: row;
+  .image-block {
+    width: 48%;
   }
 
-footer .social-icons {
-  justify-content: flex-end;
-  flex-flow: row wrap;
-}
+  .last-img {
+    display: none;
+  }
 
-footer .social-icons {
-  margin: 0 5px;
-}
+  /* Text Block */
 
-footer p span {
-  font-size: 1em;
-}
+  .text-block {
+    display: flex;
+    justify-content: center; 
+    width: 48%;
+  }
+
+  .text-block h3 {
+    text-align: center;
+  }
+
+  /* Footer */
+    
+  footer .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    }
+
+  footer .social-icons {
+    justify-content: flex-end;
+    flex-flow: row wrap;
+  }
+
+  footer .social-icons {
+    margin: 0 5px;
+  }
+
+  footer p span {
+    font-size: 1em;
+  }
    
 
 /* ==========================================================================
-   FAQ Page
+   Dinners Page -- Tablet
    ========================================================================== */
- 
+   .book-cover {
+    width: 48%;
+  }
+
+  .book-cover img {
+    margin-right: 25px;
+  }
+
+  #current-book .text-block,
+  #past-books .text-block {
+    justify-content: start;
+    min-height: 307px;
+    padding: 8px 15px 0 15px;
+  } 
+
+  #current-book .text-block p,
+  #past-books .text-block p {
+    margin-bottom: 0;
+  }
+
+  #current-book .text-block ul,
+  #past-books .text-block ul {
+    list-style-type: circle;
+    padding-left: 30px;
+  }
+
+  #current-book .text-block ul li,
+  #past-books .text-block ul li {
+    font-size: .85em;
+  }
+
 }
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
@@ -445,7 +491,6 @@ footer p span {
     width: 66%;
   }
 
-}
  /* Footer */
 
   footer .social-icons p,
@@ -453,4 +498,25 @@ footer p span {
   footer .social-icons a:visited,
   footer .scoial-icons a:link {
   font-size: 1.75em;
+  }
+
+/* ==========================================================================
+   Dinners Page -- Desktop
+   ========================================================================== */
+  .book-cover {
+    width: 35%;
+  }
+
+  #current-book .text-block,
+  #past-books .text-block {
+    width: 58%;
+    min-height: 335px;
+    padding: 8px 40px 0;
+  }
+
+  #current-book .text-block ul li,
+  #past-books .text-block ul li {
+    font-size: 1.2em;
+  }
+ 
 }
