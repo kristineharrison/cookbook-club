@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #f0e9d7;
+  background-color: #fef7e3;
   color: #315F8D;
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1em;
@@ -240,6 +240,10 @@ main section {
   flex-flow: row wrap;
 }
 
+#current-book .text-block {
+  background: #e2c365;
+  color: rgb(241, 235, 223);
+}
 
 /* ==========================================================================
    FAQ Page
@@ -405,12 +409,9 @@ main section {
 /* ==========================================================================
    Dinners Page -- Tablet
    ========================================================================== */
-   .book-cover {
+  .book-cover {
     width: 48%;
-  }
-
-  .book-cover img {
-    margin-right: 25px;
+    margin-right: 18px;
   }
 
   #current-book .text-block,
@@ -505,13 +506,20 @@ main section {
    ========================================================================== */
   .book-cover {
     width: 35%;
+    margin: 0 20px 20px 0;
+    padding: 0;
   }
+
+  #current-book,
+  #past-books {
+    align-items: flex-start;
+  } 
 
   #current-book .text-block,
   #past-books .text-block {
-    width: 58%;
+    width: 62%;
     min-height: 335px;
-    padding: 8px 40px 0;
+    padding: 0 40px 0
   }
 
   #current-book .text-block ul li,
@@ -519,4 +527,4 @@ main section {
     font-size: 1.2em;
   }
  
-}
+ }
