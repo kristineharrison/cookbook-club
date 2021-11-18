@@ -248,9 +248,9 @@ main section {
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-main #faq {
+/*main #faq {
   margin-bottom: 50px;
-}
+}*/
 
 #faq .text-block {
   justify-content: flex-start;
@@ -493,7 +493,7 @@ main #faq {
   main #faq {
     margin-bottom: 200px;
   }
-
+  
 }
 
 @media only screen and (min-width: 1200px) {
