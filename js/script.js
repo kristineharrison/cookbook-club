@@ -3,7 +3,7 @@ const thirdImage = document.querySelector(".third-img");
 const fourthImage = document.querySelector(".fourth-img");
 
 
-//Book names displayed on hover
+//Book names displayed on hover on homepage
 
 secondImage.addEventListener("mouseenter", function () {
     secondImage.innerHTML = '<h2>Vietnamese Food Any Day</h2>';
@@ -28,3 +28,4 @@ fourthImage.addEventListener("mouseenter", function () {
 fourthImage.addEventListener("mouseleave", function () {
     fourthImage.innerHTML = "";
 });
+

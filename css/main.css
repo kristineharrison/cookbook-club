@@ -248,8 +248,53 @@ main section {
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
+main {
+  margin-bottom: 50px;
+}
 
+#faq .text-block {
+  justify-content: flex-start;
+  min-height: 0px;
+  padding: 25px;
+  width: 100%;
+}
 
+.accordion-question h2 {
+  font-size: 1.75em;
+  line-height: 1.75em;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+}
+
+.accordion-answer {
+  padding: 0;
+  width: 80%;
+}
+
+.accordion h2:before {
+  content: '\02795'; /* Unicode character for plus sign */
+  float: left;
+  font-size: .5em;
+  margin-right: 10px;
+}
+
+.accordion.active h2:before {
+  content: '\2796'; /* Unicode character for minus sign */
+}
+
+.accordion:hover {
+  
+  cursor: pointer;
+}
+
+.accordion-answer {
+  display: none;
+}
+
+.accordion.active .accordion-answer {
+  display: block;
+}
 
 
 /* ==========================================================================
@@ -437,7 +482,22 @@ main section {
     font-size: .85em;
   }
 
+
+  /* ==========================================================================
+   FAQ Page -- Tablet
+   ========================================================================== */
+
+  .accordion-question h2 {
+    font-size: 2.15em;
+    line-height: 2.25em;
+  }
+
+  main {
+    margin-bottom: 200px;
+  }
+
 }
+
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
   header {
@@ -527,4 +587,15 @@ main section {
     font-size: 1.2em;
   }
  
+
+  /* ==========================================================================
+   FAQ Page -- Tablet
+  ========================================================================== */
+
+   .accordion-question h2 {
+    font-size: 2.5em;
+    line-height: 2.25em;
+  }
+
+
  }

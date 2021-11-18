@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cookbook Club</title>
+    <title>Cookbook Club: FAQ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -16,9 +16,6 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d29d7c25a6.js" crossorigin="anonymous"></script>
-
-    <script src="js/script.js" defer></script>
-
 </head>
 
 <body>
@@ -27,26 +24,47 @@
             <h1>Cookbook Club</h1>
             <nav>
                 <ul>
-                    <li><a href="books/index.html" target="self">Books</a></li>
-                    <li><a href="faq/index.html" target="self">FAQ</a></li>
-                    <li><a href="resources/index.html" target="self">Resources</a></li>
+                    <li><a href="../index.html" target="_self">Home</a></li>
+                    <li><a href="../dinners/index.html" target="_self" title="Our Dinner Meetups">Dinners</a></li>
+                    <li><a href="https://bookshop.org/wishlists/ec31c8d364a48b549f29a7eb3d4a5bdeed0f0840" target="_blank" title="Grab a book">Books</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-    
+        <div id="faq" class="content-wrapper">
+            <section class="accordion text-block">
+                <div class="accordion-question">
+                    <h2>How many people do you need to start?</h2></div>
+                <div class="accordion-answer">
+                    <p>We keep the group small with 4-5 active members, but if you have the space, the more the merrier! Our gatherings usually include at least one honorary guest.</p>
+                </div>
+            </section>
+            <section class="accordion text-block">
+                <div class="accordion-question">
+                    <h2>How do you choose a cookbook?</h2>
+                </div>
+                <div class="accordion-answer">
+                    <p>Our first "season" we hopped around the globe and visited Vietnam, India, Mexico and the comfort food of America. Now we are taking turns learning about our heritages. In our small group, that will focus on Peru, Cuba, Italy, Ireland and the UK.
+                    </p>
+                </div>
+            </section>
+            <section class="accordion text-block">
+                <div class="accordion-question">
+                    <h2>How do you decide what to cook?</h2>
+                </div>
+                <div class="accordion-answer">
+                    <p>Basically, whoever calls the recipe first gets to make it. So far we haven't had overlaps. We use a group chat to staking claim to recipes, but bigger groups might want to use a Google spreadsheet or Facebook group to keep track.
+                    </p>
+                </div>
+            </section>
+        </div>        
     </main>
 
     <footer>
         <div class="content-wrapper">
-            <div class="footer-content">
-                <p>
-                    <a href="" alt="Amazon booklist" target="_blank">
-                        <i class="fab fa-amazon"></i>
-                    </a>
-                </p>
+            <div class="social-icons">
                 <p>
                     <a href="">
                         <i class="fab fa-facebook-square"></i>
@@ -70,5 +88,16 @@
     </footer>
 
 </body>
-
+<script>
+    let answers = document.querySelectorAll(".accordion");
+    answers.forEach((event) => {
+    event.addEventListener("click", () => {
+        if (event.classList.contains("active")) {
+            event.classList.remove("active");
+        } else {
+            event.classList.add("active");
+        }
+    });
+});
+</script>
 </html>
