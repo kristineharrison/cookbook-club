@@ -248,7 +248,7 @@ main section {
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
-main {
+main #faq {
   margin-bottom: 50px;
 }
 
@@ -321,7 +321,6 @@ main {
 
 .sr-only {
   border: 0;
-  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -340,7 +339,6 @@ main {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
@@ -492,7 +490,7 @@ main {
     line-height: 2.25em;
   }
 
-  main {
+  main #faq {
     margin-bottom: 200px;
   }
 
